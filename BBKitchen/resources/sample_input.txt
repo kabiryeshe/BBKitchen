@@ -1,0 +1,55 @@
+Input :
+
+Order #1, 12:00:00, 2 Cod, 4 Haddock, 3 Chips
+Order #2, 12:00:30, 1 Haddock, 1 Chips
+Order #3, 12:01:00, 21 Chips
+
+Output :
+
+at 12:00:00, Order #1 Accepted
+at 12:00:00, Begin Cooking 4 Haddock
+at 12:00:50, Begin Cooking 3 Chips
+at 12:01:30, Begin Cooking 2 Cod
+at 12:02:50, Serve Order #1
+at 12:00:30, Order #2 Accepted
+at 12:02:50, Begin Cooking 1 Chips
+at 12:03:20, Begin Cooking 1 Haddock
+at 12:04:50, Serve Order #2
+at 12:01:00, Order #3 Rejected
+
+
+
+-----------------------
+
+
+    NSArray *input2 = @[@"Order #1, 12:00:00, 8 Chips",
+    @"Order #2, 12:00:00, 8 Chips",
+    @"Order #3, 12:00:00, 8 Chips",
+    @"Order #4, 12:00:00, 8 Chips",
+    @"Order #5, 12:02:00, 8 Chips",
+    @"Order #6, 12:02:00, 8 Chips",
+    @"Order #7, 12:08:00, 8 Chips",
+    @"Order #8, 12:08:00, 8 Chips"];
+
+    NSArray *input3 = @[@"Order #1, 12:00:00, 12 Chips",
+            @"Order #2, 12:00:00, 8 Chips"];
+
+    NSArray *input4 = @[@"Order #1, 12:00:00, 12 Cod",
+    @"Order #2, 12:00:00, 8 Cod",
+    @"Order #3, 12:10:00, 12 Haddock",
+    @"Order #4, 12:10:00, 8 Haddock",
+    @"Order #5, 12:20:00, 8 Cod, 8 Chips",
+    @"Order #6, 12:20:00, 8 Cod",
+    @"Order #7, 12:20:00, 8 Cod",
+    @"Order #8, 12:20:00, 8 Cod",
+    @"Order #9, 12:20:00, 8 Cod",
+    @"Order #10, 12:20:00, 8 Cod"];
+
+    NSArray *input5 = @[@"Order #1, 12:00:00, 12 Cod",
+            @"Order #2, 12:00:00, 8 Cod",
+            @"Order #3, 12:10:00, 12 Haddock",
+            @"Order #4, 12:10:00, 8 Haddock",
+            @"Order #5, 12:20:00, 8 Cod, 8 Chips",
+            @"Order #6, 12:20:00, 8 Chips",
+            @"Order #7, 12:20:00, 8 Chips",
+            @"Order #8, 12:20:00, 8 Chips"];

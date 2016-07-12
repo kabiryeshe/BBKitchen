@@ -1,0 +1,10 @@
+**/xcuserdata/
+*.xcworkspace
+!default.xcworkspace
+
+#
+.idea/
+
+#Pods
+
+Pods/
